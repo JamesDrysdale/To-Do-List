@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./js/bundle.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
     <title>To-Do List</title>
 </head>
 <body>
+    <h1>To-Do List</h1>
     <div id="app">
+        <ul>
+            <li v-for="task in tasks"> 
+                <span> {{ task }} </span>
+            </li>
+        </ul>
     </div>
     
 </body>
