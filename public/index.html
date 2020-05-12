@@ -15,6 +15,13 @@
                 <span> {{ task }} </span>
             </li>
         </ul>
+
+        <form v-on:submit.prevent="saveNewTask">
+            <label for="new-task">Add a new task: </label>
+            <input for="new-task" type="text" v-model="newTask" />
+            <button type="submit" >Save New Task </button>
+
+        </form>
     </div>
     
 </body>
